@@ -1,0 +1,29 @@
+.BankCard {
+  width: 400px;
+  height: 200px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  margin: 0 12px;
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  transition: transform .3s, box-shadow .3s;
+
+  &.picked {
+    transform: translate(-10px, -10px);
+    box-shadow: 10px 10px 19px 0 rgba(0,0,0,0.75);
+  }
+
+  &__title {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  &.debit {
+    background-color: #55efc4;
+  }
+
+  &.credit {
+    background-color: #d63031;
+  }
+}
